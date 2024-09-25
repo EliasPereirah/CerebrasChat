@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CerebrasChat</title>
+    <meta name="description" content="A user-friendly, open-source web application for chatting with open source LLM models using Cerebras API.">
+    <script src="js/library/showdown@1.9.0.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/chat.css">
+    <script>
+        let chat_id = new Date().getTime();
+    </script>
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="OpenSource CerebrasChat Interface">
+    <meta property="og:description" content="Chat interface for Cerebras">
+    <meta property="og:image" content="https://eliaspereirah.github.io/CerebrasChat/imgs/screenshot.png">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:url" content="https://eliaspereirah.github.io/CerebrasChat/">
+</head>
+
+<body>
+<div class="container">
+    <div id="all_dialogs"></div>
+    <div id="settings"></div>
+    <div class="conversations">
+        <div class="jsClose"></div>
+        <div class="history">
+            <div id="new_chat">New Chat</div>
+            <div id="delete_history">
+                Delete:
+                <label class="switch">
+                    <input id="can_delete" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="chat">
+        <div id="chat-messages">
+            <div class="message start_msg"><p>Welcome to CerebrasChat!</p><br></div>
+        </div>
+        <div id="loading">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="chat-input">
+            <div class="chat_wrap">
+                <label><textarea maxlength="380" placeholder="Let's talk"></textarea></label>
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script async="async" src="js/script.js"></script>
+</body>
+</html>

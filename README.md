@@ -1,5 +1,6 @@
 # CerebrasChat: Open-Source Web Interface for Cerebras Inference API
-**New**: Check out the new project to chat not only with Gemini but with several other models, whether from OpenAI, Groq, Ollama, Cohere or Anthropic https://github.com/EliasPereirah/OrionChat
+**New**: Check out the new project to chat not only with Gemini but with several other models, whether from OpenAI, Groq, Ollama, Cohere or Anthropic.
+Link: https://github.com/EliasPereirah/OrionChat
 
 **CerebrasChat** is an open-source, web-based application that allows you to interact with Cerebras LLMs availables models
 seamlessly using your own API key.
